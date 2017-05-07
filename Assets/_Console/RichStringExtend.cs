@@ -14,6 +14,22 @@ namespace RichTextExtention
 			return output;
 		}
 
+		public static string Bold(this string text)
+		{
+			string output = "";
+			output += "<b>";
+			output += text;
+			output += "</b>";
+			return output;
+		}
+		public static string Italic(this string text)
+		{
+			string output = "";
+			output += "<i>";
+			output += text;
+			output += "</i>";
+			return output;
+		}
 		public static string FromStyle(this string text,RichString rs){
 
 			string output = "";
